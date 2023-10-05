@@ -29,3 +29,8 @@
 .image-container:hover .hover-gif {
     opacity: 1;
 }
+
+/* Style the audio element */
+#hover-audio {
+    display: none;
+}

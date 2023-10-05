@@ -10,8 +10,25 @@
     </head>
     <body>
         <div class="image-container">
-            <img src="images/arisu-smile.jpg" alt="Static Image" class="static-image">
-            <img src="images/aris-dancing-arisu-blue-archive.gif" alt="Hover GIF" class="hover-gif">
+            <img src="asset/images/arisu-smile.jpg" alt="Static Image" class="static-image">
+            <img src="asset/images/aris-dancing-arisu-blue-archive.gif" alt="Hover GIF" class="hover-gif">
+            <audio id="hover-audio">
+                <source src="asset/assault.mp3" type="audio/mpeg">
+            </audio>
         </div>
     </body>
+    <script>
+        const imageContainer = document.querySelector(".image-container");
+        const audio = document.getElementById("hover-audio");
+        audio.volume = 0.1;
+    
+        imageContainer.addEventListener("mouseenter", function() {
+            audio.play();
+        });
+    
+        imageContainer.addEventListener("mouseleave", function() {
+            audio.pause();
+            //audio.currentTime = 0; // Reset the audio to the beginning
+        });
+    </script>
 </html>
