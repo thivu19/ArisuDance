@@ -1,0 +1,31 @@
+/* styles.css */
+
+/* Container for the images */
+.image-container {
+    position: relative;
+    width: 600px; /* Set the width and height as needed */
+    height: 600px;
+    overflow: hidden;
+}
+
+/* Style the static image */
+.static-image,
+.hover-gif {
+    height: auto;
+    display: block;
+}
+
+/* Style and hide the GIF */
+.hover-gif {
+    opacity: 0; /* Hide the GIF initially */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hide the static image on hover and show the GIF */
+.image-container:hover .static-image {
+    display: none;
+}
+
+.image-container:hover .hover-gif {
+    opacity: 1;
+}
