@@ -10,7 +10,9 @@
 
 /* Style the static image */
 .static-image,
-.hover-gif {
+.hover-gif,
+.end-image {
+    width: 100%;
     height: auto;
     display: block;
 }
