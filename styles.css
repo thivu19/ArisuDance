@@ -1,4 +1,13 @@
 /* styles.css */
+* {
+    background-color: rgb(115, 233, 141);
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    color:rgba(39, 56, 43, 0.747);
+}
 
 /* Container for the images */
 .image-container {
@@ -6,6 +15,9 @@
     width: 600px; /* Set the width and height as needed */
     height: 600px;
     overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Style the static image */
@@ -14,7 +26,6 @@
 .end-image {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 /* Style and hide the GIF */
